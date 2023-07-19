@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .container {
@@ -125,7 +125,6 @@ a {
     background: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 700px;
 }
 
 
@@ -164,11 +163,117 @@ a {
 
 /* banner styles end *
 
+/* online game styles start */
+.online-game {
+    text-align: center;
+    padding: 120px 0;
+}
+.online-game > .section-description {
+    padding-top: 16px;
+    padding-bottom: 48px;
+}
+
+.game {
+    width: 320px;
+    text-align: left;
+}
+
+.game-title {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; 
+    margin-top: 24px;
+}
+
+.game-img-and-overlay {
+    position: relative;
+}
+
+.game-img-and-overlay img {
+    width: 100%;
+}
+
+.game-overlay p {
+    padding-top: 16px;
+}
+
+.game-overlay .play-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+}
+
+.play-btn a {
+    font-size: 20px;
+}
+
+.game-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    color: #FF42A5;
+
+    position: absolute;
+    top: 0;
+    width: 98%;
+    height: 98%;
+    border: 4px solid #F948B2;
+    border-radius: 16px;
+}
+
+.game-overlay {
+    display: none;
+}
+
+.game-img-and-overlay:hover .game-overlay {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* online game styles end */
+
+/* play instantly section start*/
+.play-instantly-container {
+    justify-content: space-between;
+}
+.play-instantly-content {
+    width: 500px;
+    text-align: right;
+    padding-left: 120px;
+}
+.play-instantly-content > h2,
+.play-instantly-content > p{
+    max-width: 355px
+}
+.play-instantly-content > p{
+    padding-top: 24px;
+}
+
+.play-instantly-img-container {
+    position: relative;
+}
+.cat-lady-img {
+    width: 50%;
+    position: absolute;
+    bottom: -80px;
+    left: -150px;
+}
+.play-instantly-content > .section-description {
+    padding: 50px 0;
+}
+/* play instantly section end*/
+
 
 /* Responsive styles */
 @media screen and (max-width: 576px) {
     .nav-container,
-    .links-container {
+    .links-container,
+    .online-game-container,
+    .play-instantly-container  {
         flex-direction: column;
     }
     .nav {
@@ -185,7 +290,6 @@ a {
     }
     .banner-container {
         flex-direction: column-reverse;
-        /* width: 90%; */
         border: 2px solid red;
     }
     .banner-img-container img{
@@ -201,6 +305,24 @@ a {
     .banner-img-container {
         border: 2px solid red;
     }
+    .online-game-container {
+        gap: 30px;
+    }
+
+    .play-instantly-content {
+        flex-basis: auto; 
+        text-align: center;
+        padding-left: 0;
+
+        width: auto;
+    }
+
+    .cat-lady-img, .cowboy-img {
+        width: 100%;
+        position: relative;
+        bottom: auto;
+        left: auto;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -211,7 +333,9 @@ a {
         box-shadow: none;
     }
     .nav-container,
-    .links-container {
+    .links-container,
+    .online-game-container,
+    .play-instantly-container  {
         flex-direction: column;
     }
     .nav-container {
@@ -233,7 +357,41 @@ a {
         width: 100%;
     }
     .banner-content-container {
-        padding: 100px;
-        
+        padding: 100px; 
+    }
+
+    .online-game-container {
+        gap: 50px;
+    }
+    .game {
+        width: 450px;
+    }
+
+     .cowboy-img {
+        width: 80%;
+        position: relative;
+        bottom: auto;
+        left: auto;
+    }
+    .play-instantly-container {
+        justify-content: center;
+    }
+    .play-instantly-content {
+        padding-left: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .play-instantly-content > h2, .play-instantly-content > p {
+        margin: auto;
+    }
+    .play-instantly-img-container {
+        width: 500px;
+        text-align: right;
+    }
+    .cat-lady-img {
+        width: 35%;
+        position: absolute;
+        bottom: -30px;
+        left: -10px;
     }
 }
