@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    /* border: 1px solid red; */
 }
 
 .container {
@@ -11,7 +12,8 @@
 }
 
 .clr-primary {
-    background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -22,7 +24,9 @@
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    padding: 21px 40px; 
+    border: 0; 
 }
 
 .btn-primary-bg {
@@ -117,6 +121,14 @@ a {
 }
 
 /* banner styles start */
+.banner {
+    background: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+}
+
+
 .banner-content-title {
     color: #0B0223;
     font-size: 48px;
@@ -130,12 +142,26 @@ a {
     line-height: normal;
 }
 
+.banner-content-items {
+    padding: 24px 0;
+}
+
 .banner-content-items li{
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
     text-transform: lowercase;
+    padding-bottom: 20px;
 }
+
+.btn-container > .btn{
+    margin-right: 24px;
+}
+
+.banner-img-container img{
+    height: 100%;
+}
+
 /* banner styles end *
 
 
@@ -145,15 +171,45 @@ a {
     .links-container {
         flex-direction: column;
     }
+    .nav {
+        box-shadow: none;
+    }
     .nav-container {
         gap: 60px;
     }
     .links-container {
         gap: 36px;
     }
+    .banner {
+        background-image: none;
+    }
+    .banner-container {
+        flex-direction: column-reverse;
+        /* width: 90%; */
+        border: 2px solid red;
+    }
+    .banner-img-container img{
+        width: 100%;
+    }
+    .banner-content-container {
+        padding: 100px 0;
+        
+    }
+    .btn-container .btn{
+        margin-bottom:20px ;
+    }
+    .banner-img-container {
+        border: 2px solid red;
+    }
 }
 
-@media screen and (min-width: 576px) and (max-width:960px) {
+@media screen and (min-width:576px) and (max-width:960px) {
+    /* .container {
+        max-width: 80%;
+    } */
+    .nav {
+        box-shadow: none;
+    }
     .nav-container,
     .links-container {
         flex-direction: column;
@@ -163,5 +219,21 @@ a {
     }
     .links-container {
         gap: 36px;
+    }
+    
+    .banner {
+        background-image: none;
+    }
+    .banner-container {
+        flex-direction: column-reverse;
+        width: 90%;
+
+    }
+    .banner-img-container img{
+        width: 100%;
+    }
+    .banner-content-container {
+        padding: 100px;
+        
     }
 }
