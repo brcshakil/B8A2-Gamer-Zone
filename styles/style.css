@@ -267,6 +267,104 @@ a {
 }
 /* play instantly section end*/
 
+/* game category section start */
+.games-category {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.games-category-container {
+    margin-top: 170px;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.game-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    color: #0B0223;
+    width: 260px;
+    font-size: 20px;;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #FFF;
+    border: 4px solid #FFF;
+
+    cursor: pointer;
+}
+
+.game-item img{
+    padding: 10px 0;
+}
+
+.game-item:hover {
+    border: 4px solid #F948B2;
+    color: #F948B2;
+}
+/* game category section end */
+
+/* footer section */
+.footer-container {
+    background: #0B0223;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 0;
+}
+
+.footer-container .logo-container img{
+    width: 80px;
+}
+
+.footer-container .logo-container h2{
+    color: #FFF;
+}
+
+.our-services {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.our-services li a {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-icons > a {
+    font-size: 40px;
+}
+
+.copy-right-area {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.terms-and-condition{
+    display: flex;
+    gap: 50px;
+    padding: 50px 0;
+}
+.copy-right {
+    text-align: center;
+}
+
 
 /* Responsive styles */
 @media screen and (max-width: 576px) {
@@ -292,8 +390,13 @@ a {
         flex-direction: column-reverse;
         border: 2px solid red;
     }
+    .btn-container > {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+    }
     .banner-img-container img{
-        width: 100%;
+        width: 90%;
     }
     .banner-content-container {
         padding: 100px 0;
@@ -322,6 +425,22 @@ a {
         position: relative;
         bottom: auto;
         left: auto;
+    }
+    .our-services {
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 10px ;
+        padding: 0;
+    }
+    .footer-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 10px;
+    }
+    .terms-and-condition {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
