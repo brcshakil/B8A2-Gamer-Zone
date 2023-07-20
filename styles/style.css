@@ -162,7 +162,6 @@ a {
 /* online game styles start */
 .online-game {
     text-align: center;
-    padding: 120px 0;
 }
 .online-game > .section-description {
     padding-top: 16px;
@@ -233,13 +232,18 @@ a {
 /* online game styles end */
 
 /* play instantly section start*/
+.play-instantly {
+    padding: 120px 0;
+}
 .play-instantly-container {
     justify-content: space-between;
+    border: 2px solid red;
 }
 .play-instantly-content {
     width: 500px;
     text-align: right;
     padding-left: 120px;
+    border: 2px solid blue;
 }
 .play-instantly-content > h2,
 .play-instantly-content > p{
@@ -250,6 +254,7 @@ a {
 }
 
 .play-instantly-img-container {
+    border: 2px solid gold;
     position: relative;
 }
 .cat-lady-img {
@@ -422,15 +427,22 @@ a {
         flex-basis: auto; 
         text-align: center;
         padding-left: 0;
-
         width: auto;
     }
 
-    .cat-lady-img, .cowboy-img {
-        width: 100%;
-        position: relative;
-        bottom: auto;
-        left: auto;
+    .play-instantly-img-container {
+        width: 350px;
+        border: 2px solid salmon;
+        text-align: right;
+    }
+
+    .cat-lady-img{
+        width: 140px;
+        left: 0;
+        bottom: -50px;
+    } 
+    .cowboy-img {
+        width: 280px;
     }
     .our-services {
         grid-template-columns: repeat(3, 1fr);
