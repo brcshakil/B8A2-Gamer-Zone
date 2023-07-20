@@ -472,6 +472,11 @@ a {
         gap: 12px ;
         padding: 35px;
     }
+    .our-services li a {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 600;
+      }
     .footer-icons {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
