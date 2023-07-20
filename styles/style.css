@@ -162,6 +162,7 @@ a {
 /* online game styles start */
 .online-game {
     text-align: center;
+    padding-top: 120px;
 }
 .online-game > .section-description {
     padding-top: 16px;
@@ -233,7 +234,8 @@ a {
 
 /* play instantly section start*/
 .play-instantly {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 50px;
 }
 .play-instantly-container {
     justify-content: space-between;
@@ -329,8 +331,8 @@ a {
 .our-services {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 40px;
-    padding: 60px 0;
+    gap: 20px;
+    padding: 50px 0;
 }
 
 .our-services li a {
@@ -443,12 +445,7 @@ a {
     .cowboy-img {
         width: 280px;
     }
-    .our-services {
-        grid-template-columns: repeat(3, 1fr);
-        place-items: center;
-        gap: 10px ;
-        padding: 0;
-    }
+    
     .games-category-container {
         margin-top: 100px;
         padding: 50px 0;
@@ -466,6 +463,15 @@ a {
         border: 2px solid #F948B2;
         color: #F948B2;
     }
+    .footer-container {
+        padding: 50px 0;
+    }
+    .our-services {
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 12px ;
+        padding: 35px;
+    }
     .footer-icons {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -475,7 +481,9 @@ a {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        gap: 30px;
     }
+    
 }
 
 @media screen and (min-width:576px) and (max-width:960px) {
